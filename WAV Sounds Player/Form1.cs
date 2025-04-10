@@ -25,5 +25,10 @@ namespace WAV_Sounds_Player
                 txtPath.Text = ofdWAVFile.FileName;
             }
         }
+
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
