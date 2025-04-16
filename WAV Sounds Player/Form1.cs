@@ -61,6 +61,7 @@ namespace WAV_Sounds_Player
             var result = MessageBox.Show("確定關閉應用程式嗎?", "關閉確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if(result == DialogResult.No)
             {
+                //按取消不關閉
                 e.Cancel = true;
             }
         }
