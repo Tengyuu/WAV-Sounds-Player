@@ -43,18 +43,16 @@
             // 
             // txtPath
             // 
-            this.txtPath.Location = new System.Drawing.Point(23, 28);
-            this.txtPath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPath.Location = new System.Drawing.Point(17, 22);
             this.txtPath.Name = "txtPath";
-            this.txtPath.Size = new System.Drawing.Size(360, 25);
+            this.txtPath.Size = new System.Drawing.Size(271, 22);
             this.txtPath.TabIndex = 0;
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(407, 28);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBrowse.Location = new System.Drawing.Point(305, 22);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(100, 29);
+            this.btnBrowse.Size = new System.Drawing.Size(75, 23);
             this.btnBrowse.TabIndex = 1;
             this.btnBrowse.Text = "瀏覽";
             this.btnBrowse.UseVisualStyleBackColor = true;
@@ -62,10 +60,9 @@
             // 
             // btnPlay
             // 
-            this.btnPlay.Location = new System.Drawing.Point(33, 26);
-            this.btnPlay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPlay.Location = new System.Drawing.Point(25, 21);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(100, 29);
+            this.btnPlay.Size = new System.Drawing.Size(75, 23);
             this.btnPlay.TabIndex = 2;
             this.btnPlay.Text = "播放一次";
             this.btnPlay.UseVisualStyleBackColor = true;
@@ -73,33 +70,33 @@
             // 
             // btnLoop
             // 
-            this.btnLoop.Location = new System.Drawing.Point(155, 26);
-            this.btnLoop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLoop.Location = new System.Drawing.Point(116, 21);
             this.btnLoop.Name = "btnLoop";
-            this.btnLoop.Size = new System.Drawing.Size(100, 29);
+            this.btnLoop.Size = new System.Drawing.Size(75, 23);
             this.btnLoop.TabIndex = 3;
             this.btnLoop.Text = "重複播放";
             this.btnLoop.UseVisualStyleBackColor = true;
+            this.btnLoop.Click += new System.EventHandler(this.btnLoop_Click);
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(284, 26);
-            this.btnStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStop.Location = new System.Drawing.Point(213, 21);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(100, 29);
+            this.btnStop.Size = new System.Drawing.Size(75, 23);
             this.btnStop.TabIndex = 4;
             this.btnStop.Text = "停止播放";
             this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // btnEnd
             // 
-            this.btnEnd.Location = new System.Drawing.Point(407, 26);
-            this.btnEnd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEnd.Location = new System.Drawing.Point(305, 21);
             this.btnEnd.Name = "btnEnd";
-            this.btnEnd.Size = new System.Drawing.Size(100, 29);
+            this.btnEnd.Size = new System.Drawing.Size(75, 23);
             this.btnEnd.TabIndex = 5;
             this.btnEnd.Text = "結束程式";
             this.btnEnd.UseVisualStyleBackColor = true;
+            this.btnEnd.Click += new System.EventHandler(this.btnEnd_Click);
             // 
             // groupBox1
             // 
@@ -107,11 +104,9 @@
             this.groupBox1.Controls.Add(this.btnPlay);
             this.groupBox1.Controls.Add(this.btnStop);
             this.groupBox1.Controls.Add(this.btnLoop);
-            this.groupBox1.Location = new System.Drawing.Point(16, 150);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 120);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(535, 80);
+            this.groupBox1.Size = new System.Drawing.Size(401, 64);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "播放按鈕";
@@ -120,11 +115,9 @@
             // 
             this.groupBox2.Controls.Add(this.btnBrowse);
             this.groupBox2.Controls.Add(this.txtPath);
-            this.groupBox2.Location = new System.Drawing.Point(16, 54);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(12, 43);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(535, 75);
+            this.groupBox2.Size = new System.Drawing.Size(401, 60);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "音效位置";
@@ -135,14 +128,14 @@
             // 
             // frmWAVPlayer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(567, 244);
+            this.ClientSize = new System.Drawing.Size(425, 195);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmWAVPlayer";
             this.Text = "WAV 音效播放器";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmWAVPlayer_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
